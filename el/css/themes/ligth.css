@@ -1,0 +1,46 @@
+body {
+	background-color: #dcdcdc;
+}
+.header__content {
+	background-color: #74c270;
+}
+.wraper_ancors a {
+	background-color: #696969;
+	color: #000;
+}
+.wraper_ancors a:hover {
+	background-color: #7d7d7d;
+}
+.wraper_ancors a:active {
+	background-color: #575757;
+}
+.banner {
+	background-image: url(../../img/gray.jpg);
+}
+.about {
+	background-color: #4df200;
+}
+.price {
+	background-color: #f5f5f5;
+	color: #000;
+}
+summary {
+	color: #0d7e80;
+}
+.work-process {
+	background-color: #4df200;
+}
+.send-order {
+	background-color: #f5f5f5;
+}
+.send-order__text {
+	color: #838383;
+}
+button {
+	background-color: #3971e3;
+	color: #fff;
+}
+.footer {
+	background-color: #303030;
+	color: #f5f5f5;
+}

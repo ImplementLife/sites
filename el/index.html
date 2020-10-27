@@ -3,21 +3,37 @@
 	<head>
 		<title>Услуги электрика - Каменское</title>
 		<meta name="robots" content="noindex, nofollow" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 		<link rel="stylesheet" href="css/nulling_style.css">
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/themes/tb.css">
+		<noscript><link rel="stylesheet" href="css/themes/ligth.css"></noscript>
 
 		<meta name="viewport" content="width=device-width">
 		<meta charset="UTF-8">
 	</head>
 	
-	<body>
+	<body id="top">
 		<header class="header">
-			<div class="header__content conteiner">
+			<div class="conteiner">
 				<nav>
-					<a href="#">Цены</a>
-					<a href="#">Оставить заявку</a>
-					<a href="#">Контакты</a>
+					<div class="header__content">
+						<div class="logo_wraper">
+							<a href="#top"><img src="img/logo.png" alt="logo"></a>
+						</div>
+						<div class="wraper_ancors">
+							<a href="#sendOrder">Оставить заявку</a>
+						</div>
+						<div class="themeButton__wraper">
+							<label class="switch">
+							  	<input id="theme-button" type="checkbox">
+							  	<span class="slider round"></span>
+							  	<span class="moon"></span>
+							  	<span class="sun"></span>
+							</label>
+						</div>
+					</div>
 				</nav>
 			</div>
 		</header>
@@ -36,13 +52,236 @@
 				<br>(короче сюда нужен норм текст...)</div>
 			</div>
 
-			<div class="price conteiner mb">
+			<div id="price" class="price conteiner mb">
 				<div class="price__title title">Виды работ и приблизительные цены</div>
 				<div class="price__text">
-					<ul>
-						<li>Замена выключателей / розеток - 70грн</li>
-						<li>Монтаж проводки - 100грн</li>
-					</ul>
+					Вы можете ознакомится с прейскурантом цен наших услуг:
+				</div>
+				<div class="prices">
+					<div class="spoiler">
+						<details>
+							<summary>Строительные работы</summary>
+							<div class="list">
+								<ol>
+
+									<li>
+										<div class="price__element">
+											<div class="price__element_title">Пробивка сквозных отверстий в стене, L=300 мм</div>
+											<div class="price_val">40 грн/шт</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="price__element price_media">
+											<div class="price__element_title">Нарезка штробы.</div>
+											<div>
+												<div class="price_el">
+													<div>Бетон</div>
+													<div class="price_val">70 грн/м</div>
+												</div>
+												<div class="price_el">
+													<div>Кирпич</div>
+													<div class="price_val">50 грн/м</div>
+												</div>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="price__element price_media">
+											<div class="price__element_title">Сверление отверстий, под выключатели, розетки.</div>
+											<div>
+												<div class="price_el">
+													<div>Бетон</div>
+													<div class="price_val">80 грн/шт</div>
+												</div>
+												<div class="price_el">
+													<div>Кирпич</div>
+													<div class="price_val">65 грн/шт</div>
+												</div>
+												<div class="price_el">
+													<div>Гипс</div>
+													<div class="price_val">65 грн/шт</div>
+												</div>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="price__element price_media">
+											<div class="price__element_title">Обустройство ниши под щит и установка щита.</div><div>
+												<ul>
+													<li>
+														<div class="price_el">
+															<div>12 модулей</div>
+															<div class="price_val">150 грн</div>
+														</div>
+													</li>
+													<li>
+														<div class="price_el">
+															<div>24 модуля</div>
+															<div class="price_val">350 грн</div>
+														</div>
+													</li>
+													<li>
+														<div class="price_el">
+															<div>36 модулей</div>
+															<div class="price_val">500 грн</div>
+														</div>
+													</li>
+													<li>
+														<div class="price_el">
+															<div>48 модуля</div>
+															<div class="price_val">700 грн</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+
+								</ol>
+							</div>
+						</details>
+					</div>
+					<div class="spoiler">
+						<details>
+							<summary>Монтажные работы</summary>
+							<div class="list">
+								<ol>
+
+									<li>
+										<div class="price__element">
+											<div class="price__element_title">Установка монтажных коробок (бетон, кирпич, гипс)</div>
+											<div class="price_val">15 грн/шт</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="price__element">
+											<div class="price__element_title">Монтаж кабель-канала, короба</div>
+											<div class="price_val">30 грн/шт</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="price__element">
+											<div class="price__element_title">Монтаж и расключение силовой распредкоробки</div>
+											<div class="price_val">80-150 грн/шт</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="price__element price_media">
+											<div class="price__element_title">Прокладка кабелей</div>
+											<div class="large">
+												<div class="price_el">
+													<div>* Слаботочный кабель</div>
+													<div class="price_val">10 грн/м</div>
+												</div>
+												<div class="price_el">
+													<div>* Кабель, до 4 мм²</div>
+													<div class="price_val">15 грн/м</div>
+												</div>
+												<div class="price_el">
+													<div>* Кабель, до 16 мм²</div>
+													<div class="price_val">20 грн/м</div>
+												</div>
+												<div class="price_el">
+													<div>* Слаботочный кабель в гофротрубе</div>
+													<div class="price_val">15 грн/м</div>
+												</div>
+												<div class="price_el">
+													<div>* Кабель в гофротрубе, до 4 мм²</div>
+													<div class="price_val">20 грн/м</div>
+												</div>
+												<div class="price_el">
+													<div>* Кабель в гофротрубе, до 16 мм²</div>
+													<div class="price_val">30 грн/м</div>
+												</div>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="price__element price_media">
+											<div class="price__element_title">Установка устройств защиты.</div>
+											<div class="large">
+												<div class="price_el">
+													<div>* Автоматический выключатель</div>
+													<div class="price_val">65 грн/полюс</div>
+												</div>
+												<div class="price_el">
+													<div>* Реле напряжения</div>
+													<div class="price_val">100 грн/шт</div>
+												</div>
+												<div class="price_el">
+													<div>* УЗО (дифференциальное реле)</div>
+													<div class="price_val">120 грн/шт</div>
+												</div>
+												<div class="price_el">
+													<div>* Шинка распределительная</div>
+													<div class="price_val">50 грн/шт</div>
+												</div>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="price__element price_media">
+											<div class="price__element_title">Установка фурнитуры (лампочки, датчики, и т.д.)</div>
+											<div class="large">
+												<div class="price_el">
+													<div>* БРА </div>
+													<div class="price_val">85-150 грн/шт</div>
+												</div>
+												<div class="price_el">
+													<div>* Люстра</div>
+													<div class="price_val">250 грн/шт</div>
+												</div>
+												<div class="price_el">
+													<div>* Вентилятор</div>
+													<div class="price_val">150 грн/шт</div>
+												</div>
+												<div class="price_el">
+													<div>* Датчик </div>
+													<div class="price_val">150 грн/шт</div>
+												</div>
+												<div class="price_el">
+													<div>* Прожектор на улице</div>
+													<div class="price_val">200-300 грн/шт</div>
+												</div>
+												<div class="price_el">
+													<div>* Полотенцесушитель</div>
+													<div class="price_val">450 грн/шт</div>
+												</div>
+												<div class="price_el">
+													<div>* Стабилизатор</div>
+													<div class="price_val">300-600 грн/шт</div>
+												</div>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="price__element">
+											<div class="price__element_title">Установка фурнитуры (розетка, выключатель, диммер, термостат)</div>
+											<div class="price_val">50 грн/шт</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="price__element">
+											<div class="price__element_title">Демонтаж фурнитуры</div>
+											<div class="price_val">20 грн/шт</div>
+										</div>
+									</li>
+									
+								</ol>
+							</div>
+						</details>
+					</div>
+
 				</div>
 			</div>
 
@@ -56,7 +295,7 @@
 
 			<div class="line conteiner"></div>
 
-			<div class="send-order conteiner mb">
+			<div id="sendOrder" class="send-order conteiner mb">
 				<div class="send-order__content">
 					<div class="send-order__title title">
 						Оставить заявку
@@ -74,20 +313,19 @@
 							<input tabindex="2" type="tel" name="title" placeholder="Номер телефона">
 						</div>
 						<div class="send-order__form_comment">
-							<textarea tabindex="3" name="comment" id="" placeholder="Комментарий к заказу (не обязятельно)" cols="20" rows="5"></textarea>
+							<textarea tabindex="3" name="comment" id="" placeholder="Комментарий (не обязятельно)" cols="20" rows="5"></textarea>
 						</div>
 						<button type="submit">Отправить</button>
 					</form>
 				</div>
 			</div>
-
 		</main>
 
-		<footer class="footer conteiner">
+		<footer id="foot" class="footer conteiner">
 			Контактная информация +38 0** *** ** **
 		</footer>
 
 		<script type="text/javascript" src="js/scroll.js"></script>
-
+		<script type="text/javascript" src="js/themes.js"></script>
 	</body>
 </html>
