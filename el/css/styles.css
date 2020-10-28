@@ -28,27 +28,25 @@ img {
 .header {
 	position: fixed;
 	z-index: 1;
-	top: 10;
 	width: 100%;
 }
 
 .header__content {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	align-self: center;
-	margin: 10px;
-	padding: 5px;
-	height: 60px;
-	border-radius: 15px;
+	padding: 5px 30px;
+	height: 50px;
+	box-shadow: 0 7px 5px 0 rgba(0,0,0,.2);
 }
 .logo_wraper img {
 	position: relative;
 	z-index: 2;
 }
 .logo_wraper, .logo_wraper img {
-	width: 120px;
-	height: 50px;
+	width: 85px;
+	height: 40px;
 }
 
 .wraper_ancors a {
@@ -105,6 +103,7 @@ img {
 	.header__content {
 		justify-content: space-between;
 		height: 40px;
+		padding: 5px;
 	}
 	.logo_wraper, .logo_wraper img {
 		width: 70px;
