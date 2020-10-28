@@ -1,46 +1,46 @@
-body {
+html[dark] body {
 	background-color: #4d4d4d;
 }
-.header__content {
+html[dark] .header__content {
 	background-color: #74c270;
 }
-.wraper_ancors a {
+html[dark] .wraper_ancors a {
 	background-color: #696969;
 	color: #000;
 }
-.wraper_ancors a:hover {
+html[dark] .wraper_ancors a:hover {
 	background-color: #7d7d7d;
 }
-.wraper_ancors a:active {
+html[dark] .wraper_ancors a:active {
 	background-color: #575757;
 }
-.banner {
+html[dark] .banner {
 	background-image: url(../../img/black.jpg);
 }
-.about {
+html[dark] .about {
 	background-color: #878787;
 }
-.price {
+html[dark] .price {
 	background-color: #616161;
 	color: #f5f5f5;
 }
-summary {
+html[dark] summary {
 	color: #0d7e80;
 }
-.work-process {
+html[dark] .work-process {
 	background-color: #878787;
 }
-.send-order {
+html[dark] .send-order {
 	background-color: #878787;
 }
-.send-order__text {
+html[dark] .send-order__text {
 	color: #f5f5f5;
 }
-button {
+html[dark] button {
 	background-color: #3971e3;
 	color: #fff;
 }
-.footer {
+html[dark] .footer {
 	background-color: #303030;
 	color: #f4f4f4;
 }
