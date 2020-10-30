@@ -1,0 +1,32 @@
+body {
+    font-family:Arial;
+    font-size: 16px;
+
+    background-color: #f3f3f3;
+}
+.conteiner {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+/*=========   header   ==========*/
+
+
+/*=========   main   ==========*/
+
+main {
+	height: 100%;
+	margin-top: 80px;
+}
+
+
+
+/*=========   footer   ==========*/
+
+footer {
+	background-color: #313131;
+	color: #f3f3f3;
+}
+.wraper__footerContent {
+	min-height: 60px;
+}

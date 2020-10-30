@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Карточка товара</title>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/nulling_style.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/header.css">
+
+		<link rel="stylesheet" href="css/tab.css">
+		<meta name="viewport" content="width=device-width">
+		<meta charset="UTF-8">
+	</head>
+	
+	<body>
+		<header>
+			<div class="conteiner">
+				<div class="wraper__headerContent">
+
+					<div class="header__logo">
+	 					<div class="header__logo_imgWrap"><a href="#"><img src="img/header/logo.png" alt="'logo'"></a></div>
+		 				<div class="header__logo_name">Home-Service</div>
+	 				</div>
+
+	 				<div class="header__findLine">
+		 				<form action="" method="get">
+		 					<input type="text" name="find" placeholder="Поиск" autofocus>
+			 				<button type="submit"><img src="img/header/outline-search-24px.svg" alt="Поиск!"></button>
+		 				</form>
+		 			</div>
+
+					<div class="header__overlay" id="popup">
+						<a class="header__cancel" href="#"></a>
+						<form class="header__popup" action="" method="get">
+	 						<input type="text" name="find" placeholder="Поиск" autofocus>
+		 					<button type="submit"><img src="img/header/outline-search-24px.svg" alt="Поиск!"></button>
+		 			 	</form>
+					</div>
+
+		 			<div class="header__buttons">
+		 				<div class="header__searchMobile"><a href="#popup"><img src="img/header/search-white-48dp.svg" alt="Избранное"></a></div>
+						<div class="header__favorite">
+							<a href="">
+								<img src="img/header/favorite_border-white-18dp.svg" alt="Избранное">
+								<div id="countFavorite" class="header__count" hidden>4</div>
+							</a>
+						</div>
+			 			<div class="header__basked">
+			 				<a href="">
+			 					<img src="img/header/shopping_cart-white-18dp.svg" alt="Корзина">
+			 					<div id="countBasked" class="header__count" hidden>5</div>
+			 				</a>
+			 			</div>
+		 			</div>
+
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="conteiner">
+				<div class="wraper__main">
+					<div class="main__nameProduct"></div>
+					<div class="main__pathPage"></div>
+					<div class="main__wraper__productInfo">
+						<div class="main__wraper__PhotoPrice">
+							<div class="main__wraperPhoto">
+								
+							</div>
+							<div class="main__wraperPrice">
+								
+							</div>
+						</div>
+						<div class="main__wraperTabInfo">
+							<div class="tab-frame">
+								<input type="radio" name="tab" id="tab1" checked>
+								<label for="tab1">Описание</label>
+								<input type="radio" name="tab" id="tab2">
+								<label for="tab2">Характеристики</label>
+								<input type="radio" name="tab" id="tab3">
+								<label for="tab3">Отзывы</label>
+								<input type="radio" name="tab" id="tab4">
+								<label for="tab4">Доставка/Оплата</label>
+								 
+								<div class="tab">sample content 1</div>
+								<div class="tab">sample content 2</div>
+								<div class="tab">Отзывов пока нет</div>
+								<div class="tab">
+									<div>Доставка новой почтой или Укрпочтой</div>
+									<div>Оплата VISA / MASTERCARD</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="conteiner">
+				<div class="wraper__footerContent">
+					Контактная информация +38 0** *** ** **
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
