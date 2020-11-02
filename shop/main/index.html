@@ -1,87 +1,512 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>Home-Service - Главная</title>
+		<title>Главная</title>
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 		<link rel="stylesheet" href="css/nulling_style.css">
 		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/header.css">
+
 		<meta name="viewport" content="width=device-width">
 		
 		<meta charset="UTF-8">
 	</head>
 	
 	<body>
-	 	<header class="header">
-	 		<div class="conteiner">
-	 			<div class="header__content round-box shadow">
-		 			<div class="logo"><a href="#"><img class="header_img" src="img/logo.png" alt="'logo'"></a></div>
-		 			<div class="logo_name">Home-Service</div>
-		 			<div class="find__line">
-		 				<input class="find__input" type="text" placeholder="Поиск">
-		 				<img class="button__find header_img" src="img/find.png" alt="Поиск!">
-		 			</div>
-		 			<div class="change-theme">
-		 				<label class="switch">
-						  	<input type="checkbox">
-						  	<span class="slider round"></span>
-						</label>
-		 			</div>
-		 			<div class="basked"><img class="header_img" src="img/basket.webp" alt="Корзина"></div>
-		 		</div>
-	 		</div>
-	 	</header>
+		<header>
+			<div class="conteiner">
+				<div class="wraper__headerContent">
 
-	 	<div class="main conteiner">
-	 		<div class="main__content round-box shadow">
-	 			<div class="path">Home-Service / Главная</div>
-	 			<div class="products">
-					<div class="product round-box">
-						<div class="img">Фото</div>
-						<div class="dscr">Информация о товаре</div>
-						<div class="button round-box to-slider">Добавить в корзину</div>
-						<div class="button round-box to-page">Подробнее</div>
+					<div class="header__logo">
+						<div class="header__logo_imgWrap"><a href="https://implementlife.github.io/sites/shop/main/"><img src="img/header/logo.png" alt="'logo'"></a></div>
+						<div class="header__logo_name">Home-Service</div>
 					</div>
 
-					<div class="product round-box">
-						<div class="img">Фото</div>
-						<div class="dscr">Информация о товаре</div>
-						<div class="button round-box to-slider">Добавить в корзину</div>
-						<div class="button round-box to-page">Подробнее</div>
-					</div>
-					<div class="product round-box">
-						<div class="img">Фото</div>
-						<div class="dscr">Информация о товаре</div>
-						<div class="button round-box to-slider">Добавить в корзину</div>
-						<div class="button round-box to-page">Подробнее</div>
-					</div>
-					<div class="product round-box">
-						<div class="img">Фото</div>
-						<div class="dscr">Информация о товаре</div>
-						<div class="button round-box to-slider">Добавить в корзину</div>
-						<div class="button round-box to-page">Подробнее</div>
-					</div>
-					<div class="product round-box">
-						<div class="img">Фото</div>
-						<div class="dscr">Информация о товаре</div>
-						<div class="button round-box to-slider">Добавить в корзину</div>
-						<div class="button round-box to-page">Подробнее</div>
-					</div>
-					<div class="product round-box">
-						<div class="img">Фото</div>
-						<div class="dscr">Информация о товаре</div>
-						<div class="button round-box to-slider">Добавить в корзину</div>
-						<div class="button round-box to-page">Подробнее</div>
+					<div class="header__findLine">
+						<form action="" method="get">
+							<input type="text" name="find" placeholder="Поиск" autofocus>
+							<button type="submit"><img src="img/header/outline-search-24px.svg" alt="Поиск!"></button>
+						</form>
 					</div>
 
-	 			</div>
+					<div class="header__overlay" id="popup">
+						<a class="header__cancel" href="#"></a>
+						<form class="header__popup" action="" method="get">
+							<input type="text" name="find" placeholder="Поиск" autofocus>
+							<button type="submit"><img src="img/header/outline-search-24px.svg" alt="Поиск!"></button>
+						</form>
+					</div>
+
+					<div class="header__buttons">
+						<div class="header__searchMobile"><a href="#popup"><img src="img/header/search-white-48dp.svg" alt="Избранное"></a></div>
+						<div class="header__favorite">
+							<a href="">
+								<img src="img/header/favorite_border-white-18dp.svg" alt="Избранное">
+								<div id="countFavorite" class="header__count" hidden>4</div>
+							</a>
+						</div>
+						<div class="header__basked">
+							<a href="">
+								<img src="img/header/shopping_cart-white-18dp.svg" alt="Корзина">
+								<div id="countBasked" class="header__count" hidden>5</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
 			</div>
-	 	</div>
+		</header>
 
+		<main>
+			<div class="main__content conteiner">
 
-	 	<footer class="footer conteiner">
-	 		<div class="footer__content round-box shadow">
-	 			Контактная информация и т.д.
-	 		</div>
-	 	</footer>
+				<div class="categories section">
+					<div class="title"><img src="img/list-black-48dp.svg" alt=""><span>Категории</span></div>
+					<div class="content">
+						<div class="products pm">
+
+							<a href="https://implementlife.github.io/sites/shop/catSearch/">
+								<div class="product">
+									<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet5.jpg" alt="Фото"></div>
+									<div class="name pm">Короткое название</div>
+								</div>
+							</a>
+
+							<a href="https://implementlife.github.io/sites/shop/catSearch/">
+								<div class="product">
+									<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet4.jpg" alt="Фото"></div>
+									<div class="name pm">Короткое название</div>
+								</div>
+							</a>
+
+							<a href="https://implementlife.github.io/sites/shop/catSearch/">
+								<div class="product">
+									<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet2.jpg" alt="Фото"></div>
+									<div class="name pm">Короткое название</div>
+								</div>
+							</a>
+
+							<a href="https://implementlife.github.io/sites/shop/catSearch/">
+								<div class="product">
+									<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet3.jpg" alt="Фото"></div>
+									<div class="name pm">Короткое название</div>
+								</div>
+							</a>
+
+							<a href="https://implementlife.github.io/sites/shop/catSearch/">
+								<div class="product">
+									<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet1.jpg" alt="Фото"></div>
+									<div class="name pm">Короткое название</div>
+								</div>
+							</a>
+							
+						</div>
+					</div>
+					<div class="watchMore"><a href="https://implementlife.github.io/sites/shop/categories/">Смотреть ещё</a></div>
+				</div>
+
+				<div class="new section">
+					<div class="title"><img src="img/schedule-black-48dp.svg" alt=""><span>Новинки</span></div>
+					<div class="content">
+						<div class="products pm">
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet3.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet1.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet2.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet5.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet4.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+
+						</div>
+					</div>
+					<div class="watchMore"><a href="">Смотреть ещё</a></div>
+				</div>
+
+				<div class="best section">
+					<div class="title"><img src="img/thumb_up-black-48dp.svg" alt=""><span>Лучшее</span></div>
+					<div class="content">
+						<div class="products pm">
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet2.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet5.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet4.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet1.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet3.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+							
+						</div>
+					</div>
+					<div class="watchMore"><a href="">Смотреть ещё</a></div>
+				</div>
+
+				<div class="popular section">
+					<div class="title"><img src="img/grade-black-48dp.svg" alt=""><span>Популярное</span></div>
+					<div class="content">
+						<div class="products pm">
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet5.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet4.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet1.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet3.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://implementlife.github.io/sites/shop/cardProduct/">
+								<div class="product">
+									<div>
+										<div class="img"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet2.jpg" alt="Фото"></div>
+										<div class="wrap_infoAndFavorite pm">
+											<div class="info">
+												<div class="name">Короткое название</div>
+												<div class="isInStock" true>В наличии</div>
+											</div>
+											<div class="favoriteWrap">
+												<label class="switch">
+													<input type="checkbox">
+													<span></span>
+												</label>
+											</div>
+										</div>
+										<div class="price">130 грн <span>100 грн</span></div>
+									</div>
+									<div>
+										<div class="button pm pb to-slider">Добавить в корзину</div>
+										<div class="button pm pb to-page">Купить сейчас</div>
+									</div>
+								</div>
+							</a>
+							
+						</div>
+					</div>
+					<div class="watchMore"><a href="">Смотреть ещё</a></div>
+				</div>
+
+			</div>
+		</main>
+
+		<footer>
+			<div class="conteiner">
+				<div class="wraper__footerContent">
+					Контактная информация:
+					<br> +38 0** *** ** **
+					<br> example@mail.com
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
